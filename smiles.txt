@@ -1,0 +1,12 @@
+O=C(N(c(ccc(c1)Cc(ccc(N(C(=O)c(c2c(c(c3Br)Br)Br)c3Br)C2=O)c4)c4)c1)C(=O)c5c(c(c(c6Br)Br)Br)Br)c56
+BrC1=C(Br)C(Br)=C(C(Br)=C1Br)C1=C(Br)C(Br)=C(Br)C(Br)=C1Br
+FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCI
+BrC(Br)(Br)C1=NC(=NC(=N1)C(Br)(Br)Br)C(Br)(Br)Br
+Brc1cc(Br)c(NC(=O)c2cccc(c2)C(=O)Nc2c(Br)cc(Br)cc2Br)c(Br)c1
+FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CCI
+O=C(OC1CC(C)(C)NC(C)(C)C1)N(CCCCCCN(C(=O)OC1CC(C)(C)NC(C)(C)C1)C1CC(C)(C)NC(C)(C)C1)C1CC(C)(C)NC(C)(C)C1
+FC(F)C(F)(F)COP1(=NP(=NP(=N1)(Cl)Cl)(OCC(F)(F)C(F)F)OCC(F)(F)C(F)F)OCC(F)(F)C(F)F
+O=C(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F
+FC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)I
+O=S(=O)(ON(CC)(CC)(CC)CC)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F
+Oc1c(Br)cc(Br)c2ccc3nc4c(ccc5c(Br)cc(Br)c(O)c45)nc3c12

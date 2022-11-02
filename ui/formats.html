@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>3D MOL EXAMPLE</h1>
+  <div id="3dmol-div" style="width: 1000px; height: 500px;"></div>
+  
+  <div>
+    <label for="smile-text">SMILE:</label>
+    <input type="text" id="smile-text" name="fname"><br>
+  </div><br>
+
+  <div>
+    <label for="format">Choose a format:</label>
+    <select name="formats" id="formatsDropdown">
+      <option value="acesin">acesin -- ACES</option>
+      <option value="adf">adf -- ADF cartesian</option>
+      <option value="alc">alc -- Alchemy</option>
+      <option value="ascii">ascii -- ASCII</option>
+      <option value="bgf">bgf -- MSI BGF</option>
+      <option value="box">box -- Dock 3.5 Box</option>
+      <option value="bs">bs -- Ball and Stick</option>
+      <option value="c3d1">c3d1 -- Chem3D Cartesian 1</option>
+      <option value="c3d2">c3d2 -- Chem3D Cartesian 2</option>
+      <option value="cac">cac -- CAChe MolStruct</option>
+      <option value="caccrt">caccrt -- Cacao Cartesian</option>
+      <option value="cache">cache -- CAChe MolStruct</option>
+      <option value="cacint">cacint -- Cacao Internal</option>
+      <option value="can">can -- Canonical SMILES</option>
+      <option value="cdxml">cdxml -- ChemDraw CDXML</option>
+      <option value="cht">cht -- Chemtool</option>
+      <option value="cif">cif -- Crystallographic Information File</option>
+      <option value="ck">ck -- ChemKin </option>
+      <option value="cml">cml -- Chemical Markup Language</option>
+      <option value="cmlr">cmlr -- CML Reaction</option>
+      <option value="com">com -- Gaussian 98/03 Input</option>
+      <option value="confabreport">confabreport -- Confab report</option>
+      <option value="CONFIG">CONFIG -- DL-POLY CONFIG</option>
+      <option value="CONTCAR">CONTCAR -- VASP</option>
+      <option value="CONTFF">CONTFF -- MDFF</option>
+      <option value="copy">copy -- Copy raw text</option>
+      <option value="crk2d">crk2d -- Chemical Resource Kit diagram(2D)</option>
+      <option value="crk3d">crk3d -- Chemical Resource Kit 3D</option>
+      <option value="csr">csr -- Accelrys/MSI Quanta CSR</option>
+      <option value="cssr">cssr -- CSD CSSR</option>
+      <option value="ct">ct -- ChemDraw Connection Table</option>
+      <option value="cub">cub -- Gaussian cube</option>
+      <option value="cube">cube -- Gaussian cube</option>
+      <option value="dalmol">dalmol -- DALTON input</option>
+      <option value="dmol">dmol -- DMol3 coordinates</option>
+      <option value="dx">dx -- OpenDX cube format for APBS</option>
+      <option value="ent">ent -- Protein Data Bank</option>
+      <option value="exyz">exyz -- Extended XYZ cartesian coordinates</option>
+      <option value="fa">fa -- FASTA</option>
+      <option value="fasta">fasta -- FASTA</option>
+      <option value="feat">feat -- Feature</option>
+      <option value="fh">fh -- Fenske-Hall Z-Matrix</option>
+      <option value="fhiaims">fhiaims -- FHIaims XYZ</option>
+      <option value="fix">fix -- SMILES FIX</option>
+      <option value="fps">fps -- FPS text fingerprint format (Dalke)</option>
+      <option value="fpt">fpt -- Fingerprint</option>
+      <option value="fract">fract -- Free Form Fractional</option>
+      <option value="fs">fs -- Fastsearch</option>
+      <option value="fsa">fsa -- FASTA</option>
+      <option value="gamin">gamin -- GAMESS Input</option>
+      <option value="gau">gau -- Gaussian 98/03 Input</option>
+      <option value="gjc">gjc -- Gaussian 98/03 Input</option>
+      <option value="gjf">gjf -- Gaussian 98/03 Input</option>
+      <option value="gpr">gpr -- Ghemical</option>
+      <option value="gr96">gr96 -- GROMOS96</option>
+      <option value="gro">gro -- GRO format</option>
+      <option value="gukin">gukin -- GAMESS-UK Input</option>
+      <option value="gukout">gukout -- GAMESS-UK Output</option>
+      <option value="gzmat">gzmat -- Gaussian Z-Matrix Input</option>
+      <option value="hin">hin -- HyperChem HIN format</option>
+      <option value="inp">inp -- GAMESS Input</option>
+      <option value="jin">jin -- Jaguar input</option>
+      <option value="lmpdat">lmpdat -- The LAMMPS data</option>
+      <option value="lpmd">lpmd -- LPMD</option>
+      <option value="mcdl">mcdl -- MCDL</option>
+      <option value="mcif">mcif -- Macromolecular Crystallographic Info</option>
+      <option value="MDFF">MDFF -- MDFF format</option>
+      <option value="mdl">mdl -- MDL MOL</option>
+      <option value="ml2">ml2 -- Sybyl Mol2</option>
+      <option value="mmcif">mmcif -- Macromolecular Crystallographic Info</option>
+      <option value="mmd">mmd -- MacroModel</option>
+      <option value="mmod">mmod -- MacroModel</option>
+      <option value="mna">mna -- Multilevel Neighborhoods of Atoms (MNA)</option>
+      <option value="mol">mol -- MDL MOL</option>
+      <option value="mol2">mol2 -- Sybyl Mol2</option>
+      <option value="mold">mold -- Molden</option>
+      <option value="molden">molden -- Molden</option>
+      <option value="molf">molf -- Molden</option>
+      <option value="molreport">molreport -- Open Babel molecule report</option>
+      <option value="mop">mop -- MOPAC Cartesian</option>
+      <option value="mopcrt">mopcrt -- MOPAC Cartesian</option>
+      <option value="mopin">mopin -- MOPAC Internal</option>
+      <option value="mp">mp -- Molpro input</option>
+      <option value="mpc">mpc -- MOPAC Cartesian</option>
+      <option value="mpd">mpd -- MolPrint2D</option>
+      <option value="mpqcin">mpqcin -- MPQC simplified input</option>
+      <option value="mrv">mrv -- Chemical Markup Language</option>
+      <option value="msms">msms -- M.F. Sanner's MSMS input</option>
+      <option value="nw">nw -- NWChem input</option>
+      <option value="orcainp">orcainp -- ORCA input</option>
+      <option value="outmol">outmol -- DMol3 coordinates</option>
+      <option value="paint">paint -- Painter</option>
+      <option value="pcm">pcm -- PCModel</option>
+      <option value="pdb">pdb -- Protein Data Bank</option>
+      <option value="pdbqt">pdbqt -- AutoDock PDBQT</option>
+      <option value="pointcloud">pointcloud -- Point cloud on VDW surface</option>
+      <option value="POSCAR">POSCAR -- VASP</option>
+      <option value="POSFF">POSFF -- MDFF</option>
+      <option value="pov">pov -- POV-Ray input </option>
+      <option value="pqr">pqr -- PQR format</option>
+      <option value="pqs">pqs -- Parallel Quantum Solutions</option>
+      <option value="qcin">qcin -- Q-Chem input</option>
+      <option value="report">report -- Open Babel report</option>
+      <option value="rsmi">rsmi -- Reaction SMILES</option>
+      <option value="rxn">rxn -- MDL RXN</option>
+      <option value="sd">sd -- MDL MOL</option>
+      <option value="sdf">sdf -- MDL MOL</option>
+      <option value="smi">smi -- SMILES</option>
+      <option value="smiles">smiles -- SMILES</option>
+      <option value="stl">stl -- STL 3D-printing</option>
+      <option value="svg">svg -- SVG 2D depiction</option>
+      <option value="sy2">sy2 -- Sybyl Mol2</option>
+      <option value="tdd">tdd -- Thermo</option>
+      <option value="text">text -- Read and write raw text</option>
+      <option value="therm">therm -- Thermo</option>
+      <option value="tmol">tmol -- TurboMole Coordinate</option>
+      <option value="txt">txt -- Title</option>
+      <option value="txyz">txyz -- Tinker XYZ</option>
+      <option value="unixyz">unixyz -- UniChem XYZ</option>
+      <option value="VASP">VASP -- VASP format</option>
+      <option value="vmol">vmol -- ViewMol</option>
+      <option value="xed">xed -- XED format</option>
+      <option value="xyz">xyz -- XYZ cartesian coordinates</option>
+      <option value="yob">yob -- YASARA.org YOB</option>
+      <option value="zin">zin -- ZINDO input</option>
+    </select><br><br>
+  </div>
+  <div>
+    <button id="submit-smile" onclick ="showFormat()" >Submit</button><br><br>
+    <textarea id="textBox" rows="14" cols="63" readonly></textarea><br><br>
+    <button id="download-format" onclick="downloadFormat()">Download</button>
+  </div>
+
+  <div>
+    <h1>Batch mode</h1>
+    <h3>Choose a file containing the list of smiles (formats allowed: .txt, .smi, or .smiles)</h3>
+    <td><input type="file" id="fileToLoad" accept = ".txt, .smi, .smiles"></td><br><br>
+    <textarea id="textBox-smile" rows="14" cols="63" readonly></textarea><br><br>
+    <button id="download-zip" onclick="getFileForZIP()">Download ZIP folder</button>
+  </div>
+
+  <script src="http://3Dmol.csb.pitt.edu/build/3Dmol.js"></script>
+  <script>
+    var smiles_file_data="";
+
+    function get3D(smile){
+      $.get('http://127.0.0.1:8000/3d/'+smile, function(data) {
+      let cell_viewer = window.viewers[0][0];
+      cell_viewer.addModel(data,'sdf');
+      cell_viewer.setStyle({stick:{}});
+      cell_viewer.zoomTo();     
+      cell_viewer.render();
+
+      cell_viewer = window.viewers[0][1];
+      cell_viewer.addModel(data,'sdf');
+      cell_viewer.setStyle({sphere:{}});
+      cell_viewer.zoomTo();
+      cell_viewer.render();
+    });
+    }
+
+    function getFormatDoc(smile,format){
+      let responseData = null;
+      $.get({
+        url: 'http://127.0.0.1:8000/format/'+smile+"_"+format,
+        async:false,
+        success: function(response) {
+          console.log('http://127.0.0.1:8000/format/', response);
+          responseData = response.data;
+        }
+      });
+      return responseData;
+    }
+
+    function showFormat(){
+      let smile = $("input#smile-text").val();
+      let format =$("#formatsDropdown").val();
+      let textFormat = getFormatDoc(smile,format);
+      console.log("Showing showFormat()", textFormat);
+      $("#textBox").val(textFormat);
+    }
+
+    function downloadFormat(){
+      let smile = $("input#smile-text").val();
+      let format =$("#formatsDropdown").val();
+      let url = 'http://127.0.0.1:8000/download/'+smile+'/'+format;
+      window.open(url, '_blank');
+    }
+
+    document.getElementById('fileToLoad').onchange = function(){
+
+      var file = this.files[0];
+
+      var reader = new FileReader();
+      reader.onload = function(progressEvent){
+        console.log(this.result);
+        if (window.File && window.FileReader && window.FileList && window.Blob) {
+            var file = document.querySelector('input[type=file]').files[0];
+            var reader = new FileReader()
+
+            reader.onload = function (event) {
+                  $("#textBox-smile").val(event.target.result);
+            }
+            reader.readAsText(file);
+        }
+        var lines = this.result.split('\n');
+        smiles_file_data = lines;
+        for(var line = 0; line < lines.length; line++){
+          console.log("Smile:"+lines[line]);
+        }
+
+      };
+      reader.readAsText(file);
+    };
+
+    function getFileForZIP(){
+      let format =$("#formatsDropdown").val();
+      let url = 'http://127.0.0.1:8000/zip/'+smiles_file_data+'/'+format;
+      window.open(url, '_blank');
+    }
+    
+    function resetViewer(){
+      window.viewers = $3Dmol.createViewerGrid(
+        '3dmol-div', //id of div to create canvas in
+        {
+          rows: 1,
+          cols: 2,
+          control_all: true  //mouse controls all viewers
+        },
+        { backgroundColor: 'black' }
+      );
+    }
+
+    function readSmileFromInput(){
+      let smileTxt = $("input#smile-text").val();
+      console.log("smileTxt: ", smileTxt)
+      if(smileTxt != "" && smileTxt != null){
+        get3D(smileTxt) 
+      }else{
+        alert("Input text empty.")
+      }
+    }
+
+    $( document ).ready(function() {
+      resetViewer()
+      get3D("CCCCC")
+    });
+    $("#submit-smile").click(function(){
+      resetViewer()
+      readSmileFromInput()
+    });
+  </script>
+</body>
+</html>

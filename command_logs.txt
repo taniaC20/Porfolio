@@ -1,0 +1,23 @@
+1. Include firebase <script> tag in the index.html and other .html files
+2. Install firebase-cli to use deployment commands  
+
+https://firebase.google.com/docs/cli#install-cli-mac-linux
+curl -sL https://firebase.tools | bash
+
+3. Login to firebase from console
+
+firebase login
+
+4. Initialize hosting configuration
+
+https://firebase.google.com/docs/hosting/quickstart
+firebase init hosting
+
+NOTE: Not do this command for every update or if it has been already initialized
+
+5. Deploy to Firebase hosting
+
+firebase deploy --only hosting
+
+NOTE: If you get SSL warning or saying connection not secure, it might take a while after first setup
+https://stackoverflow.com/questions/45655019/how-do-i-add-ssl-with-firebase-hosting

@@ -1,13 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Portfolio &mdash;</title>
+    <title>Tannia Chevez &mdash; Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="">
     <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
+    <meta name="author" content="Tannia Chevez">
+    <link rel="icon" type="image/x-icon" href="img/T-logo.png">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Tannia Chevez - Portfolio">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/T-logo.png">
+    <meta property="og:url" content="https://tanniachevez.com/">
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Tannia Chevez - Portfolio Website">
+    <meta property="og:site_name" content="Tannia Chevez - Portfolio">
+    <meta name="twitter:image:alt" content="Tannia Chevez - Portfolio">
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <!-- <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username"> -->
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
     <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
@@ -787,7 +804,7 @@
 
 
           <div class="row justify-content-between">
-            
+<!--             
             <div class="col-md-6">
               <form method="post" class="form-outline-style-v1" id="contactForm">
                 <div class="form-group row mb-0">
@@ -817,10 +834,16 @@
                 Your message was sent, thank you!
               </div>
 
-            </div>
+            </div> -->
 
-            <div class="col-md-4">
-              <div class="contact-info-v1">
+            <!-- <div class="col-md-4"> -->
+            <div class="col-md-12">
+              <!-- <div class="contact-info-v1"> -->
+              <div class="contact-info-v1 text-center">
+                <div class="gsap-reveal d-block">
+                  <span class="d-block contact-info-label">Email</span>
+                  <a href="#" class="contact-info-val">tania.chevez19@gmail.com</a>
+                </div>
                 <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Email</span>
                   <a href="#" class="contact-info-val">tnchevez@mun.ca</a>
@@ -830,9 +853,17 @@
                   <a href="#" class="contact-info-val">+1(709)763-1315</a>
                 </div>
                 <div class="gsap-reveal d-block">
+                  <span class="d-block contact-info-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/tanniachevez/" class="contact-info-val">https://www.linkedin.com/in/tanniachevez/</a>
+                </div>
+                <div class="gsap-reveal d-block">
+                  <span class="d-block contact-info-label">GitHub</span>
+                  <a href="https://github.com/taniaC20?tab=repositories" class="contact-info-val">https://github.com/taniaC20</a>
+                </div>
+                <!-- <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Address</span>
                   <address class="contact-info-val">230 Elizabeth Ave, <br>  St. John's, NL A1C 5S7</address>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -905,6 +936,30 @@
     <div class="site-loader-wrap">
       <div class="site-loader"></div>
     </div>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDrhogBzRQryKMoxid6oTxsJxTPu_rDW-o",
+        authDomain: "portfolio-2b240.firebaseapp.com",
+        projectId: "portfolio-2b240",
+        storageBucket: "portfolio-2b240.appspot.com",
+        messagingSenderId: "290592327288",
+        appId: "1:290592327288:web:aaff88aa4222aa97194f8d",
+        measurementId: "G-4Y3DHCV40J"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
 
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
